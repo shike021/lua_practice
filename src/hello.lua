@@ -72,9 +72,23 @@ for k, v in pairs(table_b) do
 end
 print(table_b[3])
 print(table_b["3"])
+print(table_b[4])  -- nil
 
 
 -- function
+print("\n== Data Type: Function")
+function testFun(tab,fun) -- 函数
+    for k ,v in pairs(tab) do
+            print(fun(k,v));
+    end
+end
+Fun2 = testFun -- 也可以把函数存在变量中
 
+tab={key1="val1",key2="val2"};
+Fun2(tab,
+function(key,val) --匿名函数
+    return key.."="..val;
+end
+);
 
 -- thread
