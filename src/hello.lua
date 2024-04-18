@@ -91,4 +91,4 @@ function(key,val) --匿名函数
 end
 );
 
--- thread
+-- thread--  test.lua 文件末尾注释--  test.lua 文件末尾注释--  test.lua 文件末尾注释--  test.lua 文件末尾注释
